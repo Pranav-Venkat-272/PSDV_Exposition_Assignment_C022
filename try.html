@@ -8,13 +8,14 @@
   </head>
   <body>
     <!-- Prepare a DOM with a defined width and height for ECharts -->
-    <div id="main" style="width: 600px;height:400px;"></div>
+    <div id="main" style="width: 1000px;height:1500px;"></div>
     <script type="text/javascript">
       // Initialize the echarts instance based on the prepared dom
       var myChart = echarts.init(document.getElementById('main'));
 
       // Specify the configuration items and data for the chart
       var option = {
+<<<<<<< HEAD
         title: {
           text: 'ECharts Getting Started Example'
               },
@@ -31,6 +32,18 @@
           }
         ]
       };
+=======
+        series: [{
+          name: 'Value', // Legend name
+          type: 'pie',  // Sets the chart type to "bar"
+          data: [{value:100,name:'kohli'},
+                 {value:100,name:'rohit'},
+                 {value:1,name:'dhoni'},
+                 {value:100,name:'rahul'}
+                ]
+                }]
+                    };
+>>>>>>> 8a263bc3d3ef22b26baae8e34bb37028b3b0642a
 
       // Display the chart using the configuration items and data just specified.
       myChart.setOption(option);
