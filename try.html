@@ -14,17 +14,17 @@
       var myChart = echarts.init(document.getElementById('main'));
 
       // Specify the configuration items and data for the chart
-var option = {
-    series: [{
-        type: 'pie',  // Defines a pie chart
-        data: [
-            { value: 40, name: 'Apple' },
-            { value: 30, name: 'Banana' },
-            { value: 20, name: 'Cherry' },
-            { value: 10, name: 'Grapes' }
-        ]
-    }]
-};
+      var option = {
+          series: [{
+              type: 'pie',  // Defines a pie chart
+              data: [
+                  { value: 40, name: 'Apple' },
+                  { value: 30, name: 'Banana' },
+                  { value: 20, name: 'Cherry' },
+                  { value: 10, name: 'Grapes' }
+              ]
+          }]
+      };
       // Display the chart using the configuration items and data just specified.
       myChart.setOption(option);
     </script>
