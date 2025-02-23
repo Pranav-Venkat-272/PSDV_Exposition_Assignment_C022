@@ -15,14 +15,14 @@
 
       // Specify the configuration items and data for the chart
       var option = {
-      title: { text: 'Basic Chart' },  // Sets a title at the top
-      tooltip: {},  // Enables tooltips when hovering over chart data
-      xAxis: { data: ['A', 'B', 'C', 'D'] }, // Defines x-axis labels
-      yAxis: {},  // Defines y-axis (auto scales)
       series: [{
         name: 'Value', // Legend name
-        type: 'bar',  // Sets the chart type to "bar"
-        data: [10, 20, 30, 40]  // Data points for each x-axis label
+        type: 'pie',  // Sets the chart type to "bar"
+        data: [{value:100,name:'kohli'},
+               {value:100,name:'rohit'},
+               {value:1,name:'dhoni'},
+               {value:100,name:'rahul'}
+              ]
         }]
       };
 
