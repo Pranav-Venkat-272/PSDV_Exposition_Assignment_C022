@@ -18,16 +18,13 @@
           title: {
           text: 'ECharts Getting Started Example'
               },
+          xAxis:{data: ['Jan', 'Feb', 'Mar', 'Apr']},
+          yAxis: {},
           series: [
           {
             name: 'sales',
-            type: 'pie',
-            data: [{value: 235, name: 'Shirts'},
-                   {value: 274, name: 'Pants'},
-                   {value: 310, name: 'Shorts'},
-                   {value: 335, name: 'Shoes'},
-                   {value: 400, name: 'Socks'}
-                  ]
+            type: 'line',
+            data: [5, 20, 40, 10]
           }
         ]
         };
