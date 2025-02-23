@@ -2,40 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>ECharts Pie Chart</title>
-    <!-- Include ECharts via CDN (recommended) -->
-    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <title>ECharts</title>
+    <!-- Include the ECharts file you just downloaded -->
+    <script src="echarts.js"></script>
   </head>
   <body>
-    <!-- Container for ECharts -->
-    <div id="main" style="width: 600px; height: 400px;"></div>
-
+    <!-- Prepare a DOM with a defined width and height for ECharts -->
+    <div id="main" style="width: 1000px;height:1500px;"></div>
     <script type="text/javascript">
-      // Initialize the echarts instance
+      // Initialize the echarts instance based on the prepared dom
       var myChart = echarts.init(document.getElementById('main'));
 
-      // Define chart options
+      // Specify the configuration items and data for the chart
       var option = {
-        title: { text: 'Player Scores', left: 'center' }, // Chart title
-        tooltip: { trigger: 'item' }, // Shows data on hover
-        legend: { orient: 'vertical', left: 'left' }, // Adds a legend
         series: [{
-          name: 'Player Score', // Legend name
-          type: 'pie',  // Sets the chart type to "pie"
-          radius: '50%', // Adjusts the size of the pie chart
-          data: [
-            { value: 100, name: 'Kohli' },
-            { value: 100, name: 'Rohit' },
-            { value: 1, name: 'Dhoni' },
-            { value: 100, name: 'Rahul' }
-          ],
-          emphasis: {
-            itemStyle: { shadowBlur: 10, shadowOffsetX: 0, shadowColor: 'rgba(0, 0, 0, 0.5)' }
-          }
-        }]
-      };
+          name: 'Value', // Legend name
+          type: 'pie',  // Sets the chart type to "bar"
+          data: [{value:100,name:'kohli'},
+                 {value:100,name:'rohit'},
+                 {value:1,name:'dhoni'},
+                 {value:100,name:'rahul'}
+                ]
+                }]
+                    };
 
-      // Apply the configuration
+      // Display the chart using the configuration items and data just specified.
       myChart.setOption(option);
     </script>
   </body>
