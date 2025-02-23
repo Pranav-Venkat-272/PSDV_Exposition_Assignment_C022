@@ -17,20 +17,17 @@
       var option = {
         title: {
           text: 'ECharts Getting Started Example'
-        },
-        tooltip: {},
-        legend: {
-          data: ['sales']
-        },
-        xAxis: {
-          data: ['Shirts', 'Cardigans', 'Chiffons', 'Pants', 'Heels', 'Socks']
-        },
-        yAxis: {},
+              },
         series: [
           {
             name: 'sales',
-            type: 'bar',
-            data: [5, 20, 36, 10, 10, 20]
+            type: 'pie',
+            data: [{value: 235, name: 'Shirts'},
+                   {value: 274, name: 'Pants'},
+                   {value: 310, name: 'Shorts'},
+                   {value: 335, name: 'Shoes'},
+                   {value: 400, name: 'Socks'}
+                  ]
           }
         ]
       };
