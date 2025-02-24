@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
   };
   interactiveChart.setOption(interactiveOption);
 
-  // Event listener for form submission
+  // Take input from user and update the chart
   document.getElementById('data-form').addEventListener('submit', function (e) {
     e.preventDefault();
     var xAxisData = document.getElementById('x-axis-input').value.split(',');
