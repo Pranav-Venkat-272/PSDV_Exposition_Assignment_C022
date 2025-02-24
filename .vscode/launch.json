@@ -8,7 +8,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "http://localhost:8080",
+            "url": "http://localhost:4040",
             "webRoot": "${workspaceFolder}"
         },
         {
@@ -16,7 +16,7 @@
             "port": 9222,
             "request": "attach",
             "type": "chrome",
-            "url": "http://localhost:8080",
+            "url": "http://localhost:4040",
             "webRoot": "${workspaceFolder}"
         }
     ]
